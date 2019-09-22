@@ -23,7 +23,6 @@ import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
 import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
-import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
@@ -33,8 +32,11 @@ import Icons from "views/Icons/Icons.js";
 import Maps from "views/Maps/Maps.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
-// core components/views for RTL layout
-import RTLPage from "views/RTLPage/RTLPage.js";
+// core components/views for User layout
+import DashboardUser from "views/User/Dashboard.js";
+
+// core components/views for Auth
+import Login from "views/Auth/Login.js";
 
 const dashboardRoutes = [
   {
@@ -94,20 +96,28 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/rtl-page",
-    name: "RTL Support",
-    rtlName: "پشتیبانی از راست به چپ",
-    icon: Language,
-    component: RTLPage,
-    layout: "/rtl"
-  },
-  {
     path: "/upgrade-to-pro",
     name: "Upgrade To PRO",
     rtlName: "التطور للاحترافية",
     icon: Unarchive,
     component: UpgradeToPro,
     layout: "/admin"
+  },
+  {
+    path: "/dashboard",
+    name: "Dashboard User",
+    rtlName: "التطور للاحترافية",
+    icon: Unarchive,
+    component: DashboardUser,
+    layout: "/user"
+  },
+  {
+    path: "/login",
+    name: "Login",
+    rtlName: "التطور للاحترافية",
+    icon: Unarchive,
+    component: Login,
+    layout: "/auth"
   }
 ];
 
