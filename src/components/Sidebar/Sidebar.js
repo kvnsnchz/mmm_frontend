@@ -16,6 +16,7 @@ import AdminNavbarLinks from "components/Navbars/AdminNavbarLinks.js";
 import RTLNavbarLinks from "components/Navbars/RTLNavbarLinks.js";
 
 import styles from "assets/jss/material-dashboard-react/components/sidebarStyle.js";
+import { container } from "assets/jss/material-dashboard-react";
 
 const useStyles = makeStyles(styles);
 
@@ -25,12 +26,23 @@ export default function Sidebar(props) {
   function activeRoute(routeName) {
     return window.location.href.indexOf(routeName) > -1 ? true : false;
   }
+  function getUser() {
+    return window.localStorage.getItem("user") || { role: 'admin' };
+  }
   const { color, logo, image, logoText, routes } = props;
   var links = (
     <List className={classes.list}>
       {routes.map((prop, key) => {
         var activePro = " ";
         var listItemClasses;
+        // Hidden auth paths
+        if (prop.layout === "/auth") {
+          return;
+        }
+
+        if ( ('/' + getUser().role) != prop.layout ) {
+          return;
+        }
         if (prop.path === "/upgrade-to-pro") {
           activePro = classes.activePro + " ";
           listItemClasses = classNames({
