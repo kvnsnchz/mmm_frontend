@@ -19,11 +19,44 @@ import Code from "@material-ui/icons/Code";
 import Cloud from "@material-ui/icons/Cloud";
 
 
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import { NavLink as Link } from "react-router-dom";
+import Button from "components/CustomButtons/Button.js";
+
 export default function UserDashboard() {
     return (
       <div>
         Login
+
+        <MuiThemeProvider>
+          <div>
+            <Link 
+              to="/admin/dashboard">
+            <Button
+              label="Submit"
+              primary={true}
+              style={style}
+              >
+              Iniciar Sesión
+              </Button>    
+            </Link>
+            <Link 
+              to="/auth/register">
+            <Button
+              label="Submit"
+              primary={true}
+              style={style}
+              >
+              Registrarse
+              </Button>    
+            </Link>
+          </div>
+        </MuiThemeProvider>
       </div>
     );
   }
-  
+
+
+const style = {
+  margin: 15
+};

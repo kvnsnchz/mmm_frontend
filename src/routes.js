@@ -37,6 +37,7 @@ import DashboardUser from "views/User/Dashboard.js";
 
 // core components/views for Auth
 import Login from "views/Auth/Login.js";
+import Register from "views/Auth/Register";
 
 const dashboardRoutes = [
   {
@@ -117,6 +118,14 @@ const dashboardRoutes = [
     rtlName: "التطور للاحترافية",
     icon: Unarchive,
     component: Login,
+    layout: "/auth"
+  },
+  {
+    path: "/register",
+    name: "Register",
+    rtlName: "التطور للاحترافية",
+    icon: Unarchive,
+    component: Register,
     layout: "/auth"
   }
 ];
