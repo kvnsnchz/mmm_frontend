@@ -28,10 +28,6 @@ import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";
 import Typography from "views/Typography/Typography.js";
-import Icons from "views/Icons/Icons.js";
-import Maps from "views/Maps/Maps.js";
-import NotificationsPage from "views/Notifications/Notifications.js";
-import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for User layout
 import DashboardUser from "views/User/Dashboard.js";
 
@@ -39,7 +35,7 @@ import DashboardUser from "views/User/Dashboard.js";
 import Login from "views/Auth/Login.js";
 import Register from "views/Auth/Register";
 
-const dashboardRoutes = [
+const adminRoutes = [
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -49,61 +45,32 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/user",
-    name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
-    component: UserProfile,
-    layout: "/admin"
-  },
-  {
-    path: "/table",
-    name: "Table List",
+    path: "/camps",
+    name: "Campamentos",
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,
     layout: "/admin"
   },
   {
-    path: "/typography",
-    name: "Typography",
+    path: "/users",
+    name: "Usuarios",
+    rtlName: "ملف تعريفي للمستخدم",
+    icon: Person,
+    component: UserProfile,
+    layout: "/admin"
+  },
+  {
+    path: "/payments",
+    name: "Pagos",
     rtlName: "طباعة",
     icon: LibraryBooks,
     component: Typography,
     layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    rtlName: "الرموز",
-    icon: BubbleChart,
-    component: Icons,
-    layout: "/admin"
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    rtlName: "خرائط",
-    icon: LocationOn,
-    component: Maps,
-    layout: "/admin"
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    rtlName: "إخطارات",
-    icon: Notifications,
-    component: NotificationsPage,
-    layout: "/admin"
-  },
-  {
-    path: "/upgrade-to-pro",
-    name: "Upgrade To PRO",
-    rtlName: "التطور للاحترافية",
-    icon: Unarchive,
-    component: UpgradeToPro,
-    layout: "/admin"
-  },
+  }
+];
+
+const userRoutes = [
   {
     path: "/dashboard",
     name: "Dashboard User",
@@ -111,7 +78,10 @@ const dashboardRoutes = [
     icon: Unarchive,
     component: DashboardUser,
     layout: "/user"
-  },
+  }
+];
+
+const authRoutes = [
   {
     path: "/login",
     name: "Login",
@@ -130,4 +100,6 @@ const dashboardRoutes = [
   }
 ];
 
-export default dashboardRoutes;
+const allRoutes = [...authRoutes, ...userRoutes, ...adminRoutes];
+
+export default allRoutes;

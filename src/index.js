@@ -32,11 +32,10 @@ const hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/" component={Auth} />
       <Route path="/auth" component={Auth} />
       <Route path="/user" component={User} />
       <Route path="/admin" component={Admin} />
-      <Redirect from="/" to="/" />
+      <Redirect from="/" to="/auth/login" />
     </Switch>
   </Router>,
   document.getElementById("root")
