@@ -27,7 +27,8 @@ export default function Sidebar(props) {
     return window.location.href.indexOf(routeName) > -1 ? true : false;
   }
   function getUser() {
-    return window.localStorage.getItem("user") || { role: 'admin' };
+    let user = localStorage.getItem('user') || '{}';
+    return JSON.parse(user);
   }
   const { color, logo, image, logoText, routes } = props;
   var links = (
@@ -35,10 +36,6 @@ export default function Sidebar(props) {
       {routes.map((prop, key) => {
         var activePro = " ";
         var listItemClasses;
-        // Hidden auth paths
-        if (prop.layout === "/auth") {
-          return;
-        }
 
         if ( ('/' + getUser().role) != prop.layout ) {
           return;

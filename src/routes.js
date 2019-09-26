@@ -100,6 +100,16 @@ const authRoutes = [
   }
 ];
 
-const allRoutes = [...authRoutes, ...userRoutes, ...adminRoutes];
+const landingRoutes = [
+  {
+    path: "/",
+    name: "",
+    rtlName: "التطور للاحترافية",
+    icon: Unarchive,
+    component: Register,
+    layout: "/app"
+  }
+]
+const allRoutes = [...authRoutes, ...userRoutes, ...adminRoutes, ...landingRoutes];
 
 export default allRoutes;

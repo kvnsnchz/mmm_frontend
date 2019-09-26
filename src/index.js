@@ -30,14 +30,45 @@ import "assets/css/material-dashboard-react.css?v=1.8.0";
 
 const hist = createBrowserHistory();
 
+function getRoleUser (onlyRole = false) {
+  let user = localStorage.getItem('user') || '{}';
+  user = JSON.parse(user);
+  
+  let layout = (user.role !== undefined) ? '/' + user.role : '/app';
+  let redirect = (user.role !== undefined) ? layout + '/dashboard' : layout;
+
+  if (onlyRole) return layout;
+
+  return redirect;
+}
+
+function checkPath (props) {
+  let path = props.location.pathname;
+  let layout = getRoleUser(true);
+  /** "/user/dashboard" */
+  let check = path.includes(layout);
+  
+  return {redirect: layout, check: check};
+}
+
+const PrivateRoute = ({ component: Component, ...rest }) => {
+
+  var {redirect, check} = checkPath(rest)
+  return <Route {...rest} render={(props) => (
+     check === true
+      ? <Component {...props} />
+      : <Redirect to={redirect} />
+  )} />
+}
+
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/" component={App} />
-      <Route path="/auth" component={Auth} />
-      <Route path="/user" component={User} />
-      <Route path="/admin" component={Admin} />
-      <Redirect from="/" to="/auth/login" />
+      <PrivateRoute path="/app" component={App} />
+      <PrivateRoute path="/auth" component={Auth} />
+      <PrivateRoute path="/user" component={User} />
+      <PrivateRoute path="/admin" component={Admin} />
+      <Redirect from="/" to={getRoleUser()} />
     </Switch>
   </Router>,
   document.getElementById("root")

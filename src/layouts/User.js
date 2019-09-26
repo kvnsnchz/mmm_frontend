@@ -15,8 +15,8 @@ import routes from "routes.js";
 
 import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
 
-import bgImage from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/reactlogo.png";
+import bgImage from "assets/img/sidebar-4.jpg";
+import logo from "assets/img/mmm-sin-fondo.png";
 
 let ps;
 
@@ -50,19 +50,6 @@ export default function User({ ...rest }) {
   const [color, setColor] = React.useState("blue");
   const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const handleImageClick = image => {
-    setImage(image);
-  };
-  const handleColorClick = color => {
-    setColor(color);
-  };
-  const handleFixedClick = () => {
-    if (fixedClasses === "dropdown") {
-      setFixedClasses("dropdown show");
-    } else {
-      setFixedClasses("dropdown");
-    }
-  };
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -96,12 +83,12 @@ export default function User({ ...rest }) {
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"Gestion de Campamentos MMM"}
+        logoText={"Campamentos"}
         logo={logo}
         image={image}
         handleDrawerToggle={handleDrawerToggle}
         open={mobileOpen}
-        color={color}
+        color={'orange'}
         {...rest}
       />
       <div className={classes.mainPanel} ref={mainPanel}>
@@ -119,14 +106,6 @@ export default function User({ ...rest }) {
           <div className={classes.map}>{switchRoutes}</div>
         )}
         {getRoute() ? <Footer /> : null}
-        <FixedPlugin
-          handleImageClick={handleImageClick}
-          handleColorClick={handleColorClick}
-          bgColor={color}
-          bgImage={image}
-          handleFixedClick={handleFixedClick}
-          fixedClasses={fixedClasses}
-        />
       </div>
     </div>
   );
