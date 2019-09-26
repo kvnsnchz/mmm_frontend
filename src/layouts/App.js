@@ -8,38 +8,38 @@ export default class App extends Component {
     render(){
         return(
             <div id="top">
-                <header class="main-header">
+                <header className="main-header">
    	
-                    <div class="logo">
+                    <div className="logo">
                         <a href="index.html">Elevate</a>
                     </div> 
 
-                    <a class="menu-toggle" href="#"><span>Menu</span></a>   	
+                    <a className="menu-toggle" href="#"><span>Menu</span></a>   	
 
                 </header>
 
                 <nav id="menu-nav-wrap">
 
                 <h3>Navigation</h3>   	
-                    <ul class="nav-list">
-                        <li><a class="smoothscroll" href="#intro" title="">Home</a></li>
-                        <li><a class="smoothscroll" href="#features" title="">Features</a></li>
-                        <li><a class="smoothscroll" href="#infos" title="">Product Info</a></li>
-                        <li><a class="smoothscroll" href="#stats" title="">Stats</a></li>
-                        <li><a class="smoothscroll" href="#pricing" title="">Pricing</a></li>					
-                        <li><a class="smoothscroll" href="#testimonials" title="">Testimonials</a></li>	
-                        <li><a class="smoothscroll" href="#download" title="">Download</a></li>	
-                        <li><a class="smoothscroll" href="#subscribe" title="">Newsletter</a></li>			
+                    <ul className="nav-list">
+                        <li><a className="smoothscroll" href="#intro" title="">Home</a></li>
+                        <li><a className="smoothscroll" href="#features" title="">Features</a></li>
+                        <li><a className="smoothscroll" href="#infos" title="">Product Info</a></li>
+                        <li><a className="smoothscroll" href="#stats" title="">Stats</a></li>
+                        <li><a className="smoothscroll" href="#pricing" title="">Pricing</a></li>					
+                        <li><a className="smoothscroll" href="#testimonials" title="">Testimonials</a></li>	
+                        <li><a className="smoothscroll" href="#download" title="">Download</a></li>	
+                        <li><a className="smoothscroll" href="#subscribe" title="">Newsletter</a></li>			
                     </ul>
 
                     <h3>We Recommend Dreamhost</h3>  
-                    <p class="sponsor-text">
+                    <p className="sponsor-text">
                         Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">DreamHost</a>.
                         Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
                     </p>
 
-                    <div class="action">
-                        <a class="button" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+                    <div className="action">
+                        <a className="button" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
                     </div>
 
                 </nav>
@@ -47,22 +47,22 @@ export default class App extends Component {
                 <div id="main-content-wrap">
                     <section id="intro">
 
-                        <div class="row intro-content">
-                            <div class="col-twelve">
+                        <div className="row intro-content">
+                            <div className="col-twelve">
 
-                                <h3 class="animate-intro">Introducing Elevate</h3>
+                                <h3 className="animate-intro">Introducing Elevate</h3>
                                 
-                                <h1 class="animate-intro">
+                                <h1 className="animate-intro">
                                     The perfect template to
                                     present your awesome product.
                                 </h1>	
                                 
-                                <div class="buttons">
-                                    <a class="button stroke smoothscroll animate-intro" href="#features" title="">Features</a>
-                                    <a class="button stroke smoothscroll animate-intro" href="#download" title="">Download</a>
+                                <div className="buttons">
+                                    <a className="button stroke smoothscroll animate-intro" href="#features" title="">Features</a>
+                                    <a className="button stroke smoothscroll animate-intro" href="#download" title="">Download</a>
                                 </div>					
 
-                                <img src="images/app-screenshot-big.jpg" alt="" class="animate-intro" />   			
+                                <img src="images/app-screenshot-big.jpg" alt="" className="animate-intro" />   			
 
                             </div>		   			
                         </div>   
@@ -71,25 +71,25 @@ export default class App extends Component {
 
                     <section id="features">
 
-                        <div class="row section-intro group animate-this">	
-                            <div class="col-twelve with-bottom-line">
+                        <div className="row section-intro group animate-this">	
+                            <div className="col-twelve with-bottom-line">
 
-                                <h2 class="">Features You'll Love.</h2>
+                                <h2 className="">Features You'll Love.</h2>
 
-                                <p class="lead">Lorem ipsum Tempor do Excepteur nulla aute deserunt reprehenderit aute commodo aliquip laboris velit eu esse exercitation ex fugiat pariatur aute consequat. Lorem ipsum Fugiat mollit quis qui. Lorem ipsum Duis Excepteur Duis magna fugiat incididunt qui id quis dolor nisi irure proident labore ut in incididunt eiusmod est anim.</p>
+                                <p className="lead">Lorem ipsum Tempor do Excepteur nulla aute deserunt reprehenderit aute commodo aliquip laboris velit eu esse exercitation ex fugiat pariatur aute consequat. Lorem ipsum Fugiat mollit quis qui. Lorem ipsum Duis Excepteur Duis magna fugiat incididunt qui id quis dolor nisi irure proident labore ut in incididunt eiusmod est anim.</p>
 
                             </div>   		
                         </div>
 
-                        <div class="row features-wrap">
+                        <div className="row features-wrap">
                                             
-                            <div class="features-list block-1-3 block-s-1-2 block-tab-full">
+                            <div className="features-list block-1-3 block-s-1-2 block-tab-full">
 
-                                <div class="bgrid feature animate-this">	
+                                <div className="bgrid feature animate-this">	
 
-                                    <span class="feature-count">01.</span>            
+                                    <span className="feature-count">01.</span>            
 
-                                    <div class="feature-content">
+                                    <div className="feature-content">
 
                                         <h3>Fully Resposive</h3>
 
@@ -101,11 +101,11 @@ export default class App extends Component {
 
                                 </div> 
 
-                                <div class="bgrid feature animate-this">	
+                                <div className="bgrid feature animate-this">	
 
-                                    <span class="feature-count">02.</span>            
+                                    <span className="feature-count">02.</span>            
 
-                                    <div class="feature-content">
+                                    <div className="feature-content">
 
                                         <h3>Retina Ready</h3>
 
@@ -117,11 +117,11 @@ export default class App extends Component {
 
                                 </div> 
 
-                                <div class="bgrid feature animate-this">	
+                                <div className="bgrid feature animate-this">	
 
-                                    <span class="feature-count">03.</span>            
+                                    <span className="feature-count">03.</span>            
 
-                                    <div class="feature-content">
+                                    <div className="feature-content">
 
                                         <h3>Stylish Design</h3>
 
@@ -133,11 +133,11 @@ export default class App extends Component {
 
                                 </div> 
 
-                                <div class="bgrid feature animate-this">	
+                                <div className="bgrid feature animate-this">	
 
-                                    <span class="feature-count">04.</span>            
+                                    <span className="feature-count">04.</span>            
 
-                                    <div class="feature-content">
+                                    <div className="feature-content">
 
                                         <h3>Clean Code</h3>
 
@@ -149,11 +149,11 @@ export default class App extends Component {
 
                                 </div> 
 
-                                <div class="bgrid feature animate-this">	
+                                <div className="bgrid feature animate-this">	
 
-                                    <span class="feature-count">05.</span>            
+                                    <span className="feature-count">05.</span>            
 
-                                    <div class="feature-content">
+                                    <div className="feature-content">
 
                                         <h3>Easy To Customize</h3>
 
@@ -165,11 +165,11 @@ export default class App extends Component {
 
                                 </div>
 
-                                <div class="bgrid feature animate-this">	
+                                <div className="bgrid feature animate-this">	
 
-                                    <span class="feature-count">06.</span>            
+                                    <span className="feature-count">06.</span>            
 
-                                    <div class="feature-content">
+                                    <div className="feature-content">
 
                                         <h3>Free of Charge</h3>
 
@@ -189,26 +189,26 @@ export default class App extends Component {
 
                     <section id="infos">
 
-                        <div class="info-entry">
+                        <div className="info-entry">
 
-                            <div class="half-grey"></div>
+                            <div className="half-grey"></div>
 
-                            <div class="row info-entry-content">
+                            <div className="row info-entry-content">
 
-                                <div class="media-wrap">
-                                    <div class="media animate-this"  data-animate="fadeInRight">
+                                <div className="media-wrap">
+                                    <div className="media animate-this"  data-animate="fadeInRight">
                                         <img src="images/app-screenshot-small.jpg" alt="" />
                                     </div>   				      				
                                 </div>
 
-                                <div class="col-six text-part">   				
+                                <div className="col-six text-part">   				
                                     
-                                    <h5 class="animate-this" data-animate="fadeInLeft">Some Cool Stuff</h5>
-                                    <h2 class="animate-this" data-animate="fadeInLeft">Clean and Organized Code</h2>
+                                    <h5 className="animate-this" data-animate="fadeInLeft">Some Cool Stuff</h5>
+                                    <h2 className="animate-this" data-animate="fadeInLeft">Clean and Organized Code</h2>
 
-                                    <p class="animate-this" data-animate="fadeInLeft">Lorem ipsum Sunt adipisicing adipisicing esse exercitation consequat sed irure commodo cupidatat aute ea adipisicing consectetur nulla consequat irure consectetur veniam sit sit qui reprehenderit officia sunt nulla elit nisi proident.</p>
+                                    <p className="animate-this" data-animate="fadeInLeft">Lorem ipsum Sunt adipisicing adipisicing esse exercitation consequat sed irure commodo cupidatat aute ea adipisicing consectetur nulla consequat irure consectetur veniam sit sit qui reprehenderit officia sunt nulla elit nisi proident.</p>
 
-                                    <a href="#" class="button animate-this" data-animate="fadeInLeft">Learn More</a>
+                                    <a href="#" className="button animate-this" data-animate="fadeInLeft">Learn More</a>
                                                 
                                 </div>   				
                                 
@@ -216,28 +216,28 @@ export default class App extends Component {
 
                         </div> 
 
-                        <div class="info-entry">
+                        <div className="info-entry">
 
-                            <div class="half-grey"></div>
+                            <div className="half-grey"></div>
 
-                            <div class="row info-entry-content">
+                            <div className="row info-entry-content">
                             
-                                <div class="media-wrap">
-                                    <div class="media animate-this" data-animate="fadeInLeft">
-                                        <div class="fluid-video-wrapper">
+                                <div className="media-wrap">
+                                    <div className="media animate-this" data-animate="fadeInLeft">
+                                        <div className="fluid-video-wrapper">
                                             <iframe src="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
                                         </div>
                                     </div>   				
                                 </div>
 
-                                <div class="col-six text-part">   				
+                                <div className="col-six text-part">   				
                                     
-                                    <h5 class="animate-this" data-animate="fadeInRight">Video Stuff</h5>
-                                    <h2 class="animate-this" data-animate="fadeInRight">Your Super Cool Video</h2>
+                                    <h5 className="animate-this" data-animate="fadeInRight">Video Stuff</h5>
+                                    <h2 className="animate-this" data-animate="fadeInRight">Your Super Cool Video</h2>
 
-                                    <p class="animate-this" data-animate="fadeInRight">Lorem ipsum Sunt adipisicing adipisicing esse exercitation consequat sed irure commodo cupidatat aute ea adipisicing consectetur nulla consequat irure consectetur veniam sit sit qui reprehenderit officia sunt nulla elit nisi proident.</p>
+                                    <p className="animate-this" data-animate="fadeInRight">Lorem ipsum Sunt adipisicing adipisicing esse exercitation consequat sed irure commodo cupidatat aute ea adipisicing consectetur nulla consequat irure consectetur veniam sit sit qui reprehenderit officia sunt nulla elit nisi proident.</p>
 
-                                    <a href="#" class="button animate-this" data-animate="fadeInRight">Learn More</a>
+                                    <a href="#" className="button animate-this" data-animate="fadeInRight">Learn More</a>
                                                 
                                 </div>
 
@@ -247,92 +247,92 @@ export default class App extends Component {
 
    	                </section>
 
-                    <section id="stats" class="count-up">
+                    <section id="stats" className="count-up">
 
-                        <div class="row">
-                            <div class="col-twelve">
+                        <div className="row">
+                            <div className="col-twelve">
 
-                                <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+                                <div className="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
 
-                                    <div class="bgrid stat">
+                                    <div className="bgrid stat">
 
-                                        <div class="icon-part">
-                                            <i class="icon-pencil-ruler"></i>
+                                        <div className="icon-part">
+                                            <i className="icon-pencil-ruler"></i>
                                         </div>
 
-                                        <h3 class="stat-count">110</h3>
+                                        <h3 className="stat-count">110</h3>
 
-                                        <h5 class="stat-title">
+                                        <h5 className="stat-title">
                                             Awesome Projects
                                         </h5>
 
                                     </div>				
 
-                                    <div class="bgrid stat">
+                                    <div className="bgrid stat">
 
-                                        <div class="icon-part">
-                                            <i class="icon-location-user"></i>
+                                        <div className="icon-part">
+                                            <i className="icon-location-user"></i>
                                         </div>
 
-                                        <h3 class="stat-count">9050</h3>
+                                        <h3 className="stat-count">9050</h3>
 
-                                        <h5 class="stat-title">
+                                        <h5 className="stat-title">
                                             Clients Served
                                         </h5>
 
                                     </div> 
 
-                                    <div class="bgrid stat">
+                                    <div className="bgrid stat">
 
-                                        <div class="icon-part">
-                                            <i class="icon-rewards-medal-1"></i>
+                                        <div className="icon-part">
+                                            <i className="icon-rewards-medal-1"></i>
                                         </div>
 
-                                        <h3 class="stat-count">210</h3>
+                                        <h3 className="stat-count">210</h3>
 
-                                        <h5 class="stat-title">
+                                        <h5 className="stat-title">
                                             Awards Received
                                         </h5>
 
                                     </div> 								
 
-                                    <div class="bgrid stat">
+                                    <div className="bgrid stat">
 
-                                        <div class="icon-part">
-                                            <i class="icon-alien"></i>
+                                        <div className="icon-part">
+                                            <i className="icon-alien"></i>
                                         </div>
 
-                                        <h3 class="stat-count">123</h3>
+                                        <h3 className="stat-count">123</h3>
 
-                                        <h5 class="stat-title">
+                                        <h5 className="stat-title">
                                             Crazy Ideas
                                         </h5>
 
                                     </div> 
 
-                                    <div class="bgrid stat">
+                                    <div className="bgrid stat">
 
-                                        <div class="icon-part">
-                                            <i class="icon-coffee-mug"></i>
+                                        <div className="icon-part">
+                                            <i className="icon-coffee-mug"></i>
                                         </div>
 
-                                        <h3 class="stat-count">1500</h3>
+                                        <h3 className="stat-count">1500</h3>
 
-                                        <h5 class="stat-title">
+                                        <h5 className="stat-title">
                                             Coffee Cups
                                         </h5>
 
                                     </div> 
 
-                                    <div class="bgrid stat">
+                                    <div className="bgrid stat">
 
-                                        <div class="icon-part">
-                                            <i class="icon-hourglass"></i>
+                                        <div className="icon-part">
+                                            <i className="icon-hourglass"></i>
                                         </div>
 
-                                        <h3 class="stat-count">7200</h3>
+                                        <h3 className="stat-count">7200</h3>
 
-                                        <h5 class="stat-title">
+                                        <h5 className="stat-title">
                                             Hours
                                         </h5>
 
@@ -347,42 +347,42 @@ export default class App extends Component {
 
                     <section id="pricing">
 
-                        <div class="row section-intro animate-this">
-                            <div class="col-twelve with-bottom-line">
+                        <div className="row section-intro animate-this">
+                            <div className="col-twelve with-bottom-line">
 
                                 <h2>Plans and Pricing.</h2>
 
-                                <p class="lead">Lorem ipsum Tempor do Excepteur nulla aute deserunt reprehenderit aute commodo aliquip laboris velit eu esse exercitation ex fugiat pariatur aute consequat. Lorem ipsum Fugiat mollit quis qui. Lorem ipsum Duis Excepteur Duis magna fugiat incididunt qui id quis dolor nisi irure proident labore ut in incididunt eiusmod est anim.</p>
+                                <p className="lead">Lorem ipsum Tempor do Excepteur nulla aute deserunt reprehenderit aute commodo aliquip laboris velit eu esse exercitation ex fugiat pariatur aute consequat. Lorem ipsum Fugiat mollit quis qui. Lorem ipsum Duis Excepteur Duis magna fugiat incididunt qui id quis dolor nisi irure proident labore ut in incididunt eiusmod est anim.</p>
 
                             </div>   		
                         </div>
 
-	   	                <div class="row pricing-content">
+	   	                <div className="row pricing-content">
 
-	                        <div class="pricing-tables block-1-3  group">
+	                        <div className="pricing-tables block-1-3  group">
 
-	                            <div class="bgrid animate-this"> 
+	                            <div className="bgrid animate-this"> 
 
-	            	                <div class="price-block">
+	            	                <div className="price-block">
 
-                                        <div class="top-part">
+                                        <div className="top-part">
 
-                                            <h3 class="plan-title">Starter</h3>
-                                        <p class="plan-price"><sup>$</sup>4.99</p>
-                                        <p class="price-month">Per month</p>		             
+                                            <h3 className="plan-title">Starter</h3>
+                                        <p className="plan-price"><sup>$</sup>4.99</p>
+                                        <p className="price-month">Per month</p>		             
 
                                         </div>                
 
-                                        <div class="bottom-part">
+                                        <div className="bottom-part">
 
-                                                <ul class="features">
+                                                <ul className="features">
                                                 <li><strong>3GB</strong> Storage</li>
                                                 <li><strong>10GB</strong> Bandwidth</li>		                  
                                                 <li><strong>5</strong> Databases</li>		                  
                                                 <li><strong>30</strong> Email Accounts</li>
                                             </ul>
 
-                                            <a class="button large" href="">Get Started</a>
+                                            <a className="button large" href="">Get Started</a>
 
                                         </div>
 
@@ -390,28 +390,28 @@ export default class App extends Component {
 	                        
 				                </div> 
 
-	                            <div class="bgrid animate-this">
+	                            <div className="bgrid animate-this">
 
-	            	                <div class="price-block primary" data-info="popular">
+	            	                <div className="price-block primary" data-info="popular">
 
-                                        <div class="top-part">
+                                        <div className="top-part">
 
-                                            <h3 class="plan-title">Standard</h3>
-                                        <p class="plan-price"><sup>$</sup>9.99</p>
-                                        <p class="price-month">Per month</p>							
+                                            <h3 className="plan-title">Standard</h3>
+                                        <p className="plan-price"><sup>$</sup>9.99</p>
+                                        <p className="price-month">Per month</p>							
 
                                         </div>               
 
-                                        <div class="bottom-part">
+                                        <div className="bottom-part">
 
-                                                <ul class="features">
+                                                <ul className="features">
                                                 <li><strong>5GB</strong> Storage</li>
                                                 <li><strong>15GB</strong> Bandwidth</li>		                  
                                                 <li><strong>7</strong> Databases</li>		                  
                                                 <li><strong>40</strong> Email Accounts</li>
                                             </ul>
 
-                                            <a class="button large" href="">Get Started</a>
+                                            <a className="button large" href="">Get Started</a>
 
                                             </div>
 	            		
@@ -419,28 +419,28 @@ export default class App extends Component {
 
 				                </div> 
 
-	                            <div class="bgrid animate-this">               
+	                            <div className="bgrid animate-this">               
 
-	                                <div class="price-block">
+	                                <div className="price-block">
 
-                                        <div class="top-part">
+                                        <div className="top-part">
 
-                                            <h3 class="plan-title">Premium</h3>
-                                        <p class="plan-price"><sup>$</sup>29.99</p>
-                                        <p class="price-month">Per month</p>	                		               
+                                            <h3 className="plan-title">Premium</h3>
+                                        <p className="plan-price"><sup>$</sup>29.99</p>
+                                        <p className="price-month">Per month</p>	                		               
 
                                         </div> 
 		            	
-                                        <div class="bottom-part">
+                                        <div className="bottom-part">
 
-                                            <ul class="features">
+                                            <ul className="features">
                                                 <li><strong>10GB</strong> Storage</li>
                                                 <li><strong>30GB</strong> Bandwidth</li>		                  
                                                 <li><strong>15</strong> Databases</li>		                  
                                                 <li><strong>60</strong> Email Accounts</li>
                                             </ul>
 
-                                            <a class="button large" href="">Get Started</a>
+                                            <a className="button large" href="">Get Started</a>
 
                                         </div>	            		                
 	            		
@@ -455,32 +455,32 @@ export default class App extends Component {
 	                </section>
 
                     <section id="testimonials">
-	   	                <div class="row testimonial-content">
-	   		                <div class="col-twelve">
+	   	                <div className="row testimonial-content">
+	   		                <div className="col-twelve">
 
-                                <h2 class="h01 animate-this">
+                                <h2 className="h01 animate-this">
                                 Hear What Our Customers Say.
                                 </h2>
 
-                                <div id="testimonial-slider" class="flexslider animate-this">
-                                    <ul class="slides">	
+                                <div id="testimonial-slider" className="flexslider animate-this">
+                                    <ul className="slides">	
                                         <li>
                                             <p>&ldquo;Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.&rdquo;</p>
-                                            <p class="author-info">&mdash; Steve Jobs</p>
+                                            <p className="author-info">&mdash; Steve Jobs</p>
                                         </li>						
                                         <li>
                                             <p>&ldquo;Good design is as little design as possible. Less, but better - because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity..&rdquo;</p>
-                                            <p class="author-info">&mdash; Dieter Rams</p>
+                                            <p className="author-info">&mdash; Dieter Rams</p>
                                         </li>						
                                         <li>
                                             <p>&ldquo;A fundamental part of that is making mistakes together. There's no learning without trying lots of ideas and failing lots of times.&rdquo;</p>
-                                            <p class="author-info">&mdash; Jony Ive</p>
+                                            <p className="author-info">&mdash; Jony Ive</p>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="flexslider-controls animate-this">
-                                <ul class="flex-control-nav">
+                                <div className="flexslider-controls animate-this">
+                                <ul className="flex-control-nav">
                                     <li><img src="images/customer01.jpg" alt=""/></li>
                                     <li><img src="images/customer02.jpg" alt=""/></li>
                                     <li><img src="images/customer03.jpg" alt=""/></li>
@@ -493,38 +493,38 @@ export default class App extends Component {
 
                     <footer id="main-footer">
 
-                        <div class="footer-social-wrap">  
-                            <div class="row">
+                        <div className="footer-social-wrap">  
+                            <div className="row">
                                         
-                                <ul class="footer-social-list">
+                                <ul className="footer-social-list">
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-facebook-square"></i>
+                                            <i className="fa fa-facebook-square"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-twitter"></i>
+                                            <i className="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-google-plus"></i>
+                                            <i className="fa fa-google-plus"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-pinterest"></i>
+                                            <i className="fa fa-pinterest"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-instagram"></i>
+                                            <i className="fa fa-instagram"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-dribbble"></i>
+                                            <i className="fa fa-dribbble"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -532,12 +532,12 @@ export default class App extends Component {
                             </div> 
                         </div> 
 
-	                    <div class="footer-info-wrap">
+	                    <div className="footer-info-wrap">
 
-	   	                    <div class="row footer-info">
+	   	                    <div className="row footer-info">
 
-                                <div class="col-four tab-full">
-                                    <h4><i class="icon-location-map-1"></i> Where to Find Us</h4>
+                                <div className="col-four tab-full">
+                                    <h4><i className="icon-location-map-1"></i> Where to Find Us</h4>
 
                                     <p>
                                     1600 Amphitheatre Parkway<br/>
@@ -546,8 +546,8 @@ export default class App extends Component {
                                     </p>
                                 </div>
 
-                                <div class="col-four tab-full collapse">
-                                    <h4><i class="icon-phone-incoming"></i> Get In Touch</h4>
+                                <div className="col-four tab-full collapse">
+                                    <h4><i className="icon-phone-incoming"></i> Get In Touch</h4>
 
                                     <p>someone@elevatewebsite.com<br/>
                                         info@elevatewebsite.com <br/>
@@ -555,10 +555,10 @@ export default class App extends Component {
                                     </p>
                                 </div>
 
-                                <div class="col-four tab-full">
-                                    <h4><i class="icon-organization-hierarchy-3"></i> Company Links</h4>
+                                <div className="col-four tab-full">
+                                    <h4><i className="icon-organization-hierarchy-3"></i> Company Links</h4>
 
-                                    <ul class="footer-link-list">
+                                    <ul className="footer-link-list">
                                         <li><a href="#">Company Journal</a></li>
                                         <li><a href="#">Product Support</a></li>
                                         <li><a href="#">Privacy Policy</a></li>
@@ -568,9 +568,9 @@ export default class App extends Component {
 		  	                </div>
                         </div>
 	   	
-                        <div class="footer-bottom"> 
+                        <div className="footer-bottom"> 
 
-                            <div class="copyright">
+                            <div className="copyright">
                                 <span>© Copyright Elevate 2016.</span> 
                                 <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
                             </div>  		
@@ -579,9 +579,13 @@ export default class App extends Component {
                     </footer>
 
                     <div id="go-top">
-                        <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+                        <a className="smoothscroll" title="Back to Top" href="#top"><i className="fa fa-long-arrow-up"></i></a>
                     </div>
-                       
+                    {
+                    /*<div id="preloader"> 
+                            <div id="loader"></div>
+                    </div>*/
+                    }
                 </div>
             </div>
         );
