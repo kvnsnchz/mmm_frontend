@@ -1,6 +1,29 @@
 import React, { Component } from "react";
 import {Helmet} from "react-helmet";
+import { Switch, Route, Redirect } from "react-router-dom";
+import routes from "routes.js";
 
+import "../assets/css/base.css";
+import "../assets/css/vendor.css";
+import "../assets/css/main.css";
+
+const switchRoutes = (
+    <Switch>
+      {routes.map((prop, key) => {
+        if (prop.layout === "/app") {
+          return (
+            <Route
+              path={prop.layout + prop.path}
+              component={prop.component}
+              key={key}
+            />
+          );
+        }
+        return null;
+      })}
+      <Redirect from="/app" to="/app/" />
+    </Switch>
+  );
 export default class App extends Component {
 
     render(){
