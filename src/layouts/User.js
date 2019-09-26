@@ -96,7 +96,7 @@ export default function User({ ...rest }) {
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"Creative Tim"}
+        logoText={"Gestion de Campamentos MMM"}
         logo={logo}
         image={image}
         handleDrawerToggle={handleDrawerToggle}
